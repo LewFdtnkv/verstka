@@ -33,95 +33,6 @@ body {
 main{
     border-color: var(--dark-color);
 }
-.header {
-    width: 100%;
-    background-color: var(--dark-color);
-    display: flex;
-    font-weight: 700;
-    align-items: center;
-    padding: 32px;
-    justify-content: space-between;
-    position: relative;
-
-    &_logo {
-        width: 135px;
-        height: 25px;
-        object-fit: contain;
-    }
-
-    &_list {
-        list-style: none;
-        display: flex;
-        letter-spacing: 1.2px;
-        align-items: center;
-        gap: 20px;
-        margin: 0;
-        padding: 0;
-        
-        &__item {
-            position: relative;
-            padding-right: 12px;
-            
-            &.selected::after {  
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 5px;
-                height: 5px;
-                background-color: var(--white-color);
-                border-radius: 50%;
-            }
-        }
-    }
-
-    &_buttons {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-
-        .header_button {
-            width: 124px;
-            height: 38px;
-            font-size: 12px;
-            background-color: var(--white-color);
-            color: var(--black-color);
-            border-radius: var(--border-radius);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            white-space: nowrap; 
-            font-weight: 700;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-            
-            &:hover {
-                background-color: #e6e6e6;
-            }
-        }
-
-        .burger_button {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            
-            span {
-                display: block;
-                width: 24px;
-                height: 2px;
-                background: var(--white-color);
-                margin: 3px 0;
-                transition: all 0.3s ease;
-            }
-        }
-    }
-}
-
 .title {
     padding-top: 150px;
 
@@ -567,71 +478,6 @@ main{
     }
     
 }
-.footer{
-    .qodef-grid-inner{
-        padding: 80px;
-        display: flex;
-        align-items: center;
-        gap: 63px;
-        justify-content: space-between;
-        &_logo{
-            width: 270px;
-        }
-        .qodef-footer-logo-text{
-            
-            width: 870px;
-            font-size: 20px;
-        }
-    }
-   .footer-about{
-    padding: 0 80px 120px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    &_li{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: start;
-        justify-content: start;
-        &__title{
-            display: flex;
-            align-items: center;
-            font-size: 22px;
-            gap: 5px;
-        }
-        &__text{
-            display: flex;
-            flex-direction: column;
-            width: 290px;
-            letter-spacing: 0.8px;
-        }
-        &__button{
-            padding-left: 31px;
-            display: flex;
-            align-items: center;
-            width: 302px;
-            height: 54px;
-            border: 1px solid var(--white-color);
-            color: var(--gray-color);
-            border-radius: var(--border-radius);
-            justify-content: space-between;
-            &___img{
-                width: 54px;
-                height: 54px;
-            }
-        }
-    }
-   }
-   .footer-copyright{
-    width: 100%;
-    background-color: var(--dark-color);
-    padding-left: 80px;
-    &_img{
-        width: 45%;
-    }
-   }
-}
 
 @media (max-width: 1470px){
     .title{
@@ -664,49 +510,8 @@ main{
             }
         }
     }
-    .footer{
-        .qodef-grid-inner{
-            padding: 60px;
-            gap: 63px;
-            &_logo{
-                width: 270px;
-            }
-            .qodef-footer-logo-text{
-                
-                width: 870px;
-                font-size: 20px;
-            }
-        }
-       .footer-about{
-        padding: 0 60px 120px;
-        &_li{
-            gap: 20px;
-            &__title{
-                font-size: 22px;
-            }
-            &__text{
-                width: 270px;
-            }
-            &__button{
-                padding-left: 31px;
-                width: 220px;
-                height: 54px;
-                &___img{
-                    width: 54px;
-                    height: 54px;
-                }
-            }
-            &__networks{
-                width: 220px;
-            }
-        }
-       }
-       .footer-copyright{
-        padding-left: 60px;
-       }
-    }
-    
 }
+
 @media (max-width: 1199.98px) {
     .title {
         &_name {
@@ -875,51 +680,9 @@ main{
                 font-size: 12px;
             }
         }
-       
-    }
-    .footer{
-        .qodef-grid-inner{
-            padding: 40px;
-            gap: 63px;
-            &_logo{
-                width: 270px;
-            }
-            .qodef-footer-logo-text{
-                
-                width: 870px;
-                font-size: 18px;
-            }
-        }
-       .footer-about{
-        padding: 0 40px 120px;
-        &_li{
-            gap: 20px;
-            &__title{
-                font-size: 18px;
-            }
-            &__text{
-                width: 220px;
-                font-size: 12px;
-            }
-            &__button{
-                padding-left: 24px;
-                width: 200px;
-                height: 54px;
-                &___img{
-                    width: 54px;
-                    height: 54px;
-                }
-            }
-            &__networks{
-                width: 200px;
-            }
-        }
-       }
-       .footer-copyright{
-        padding-left: 40px;
-       }
     }
 }
+
 
 @media (max-width: 992px) {
     .title {
@@ -1095,90 +858,12 @@ main{
                 width: 250px;
                 font-size: 10px;
             }
-        }
-       
-    }
-    .footer{
-        .qodef-grid-inner{
-            padding: 40px;
-            gap: 63px;
-            &_logo{
-                width: 270px;
-            }
-            .qodef-footer-logo-text{
-                
-                width: 870px;
-                font-size: 12px;
-            }
-        }
-       .footer-about{
-        padding: 0 40px 60px;
-        &_li{
-            gap: 20px;
-            &__title{
-                font-size: 16px;
-            }
-            &__text{
-                width: 172px;
-                font-size: 10px;
-            }
-            &__button{
-                padding-left: 24px;
-                width: 160px;
-                height: 40px;
-                &___img{
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-            &__networks{
-                width: 160px;
-            }
-        }
-       }
+        } 
     }
 }
 
-/* 768px and below */
+
 @media (max-width: 768.1px) {
-    .header {
-        padding: 20px 10px;
-        
-        &_list {
-            font-size: 12px;
-            gap: 10px;
-            
-            &__item {
-                padding-right: 8px;
-                
-                &.selected::after {  
-                    width: 3px;
-                    height: 3px;
-                }
-            }
-        }
-        
-        &_buttons {
-            gap: 20px;
-            
-            .header_button {
-                width: auto;
-                padding: 0 12px;
-                font-size: 12px;
-                height: 32px;
-            }
-            
-            .burger_button {
-                width: 32px;
-                height: 32px;
-                
-                span {
-                    width: 20px;
-                    margin: 2.5px 0;
-                }
-            }
-        }
-    }
     .qodef-grid-inner{
         padding:  30px 0px 60px;
         &_ul{
@@ -1365,63 +1050,10 @@ main{
         }
        
     }
-    .footer{
-        .qodef-grid-inner{
-            padding: 20px;
-            gap: 63px;
-            &_logo{
-                width: 270px;
-            }
-            .qodef-footer-logo-text{
-                
-                width: 870px;
-                font-size: 10px;
-            }
-        }
-       .footer-about{
-        padding: 0 20px 40px;
-        &_li{
-            gap: 10px;
-            &__title{
-                font-size: 12px;
-                &___img{
-                    width: 14px;
-                }
-            }
-            &__text{
-                width: 120px;
-                font-size: 6px;
-            }
-            &__button{
-                padding-left: 16px;
-                width: 120px;
-                height: 32px;
-                font-size: 12px;
-                &___img{
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-            &__networks{
-                width: 120px;
-            }
-        }
-       }
-       .footer-copyright{
-        padding-left: 20px;
-       }
-    }
 }
 
-/* 576px and below */
+
 @media (max-width: 576px) {
-    .header {
-        &_list {
-            display: none;
-        }
-        padding: 15px 15px;
-    }
-    
     .title {
         padding-top: 40px;
         
@@ -1649,65 +1281,11 @@ main{
         }
        
     }
-    .footer{
-        .qodef-grid-inner{
-            padding: 10px;
-            gap: 20px;
-            &_logo{
-                width: 270px;
-            }
-            .qodef-footer-logo-text{
-                
-                width: 870px;
-                font-size: 8px;
-            }
-        }
-       .footer-about{
-        padding: 0 10px 20px;
-        &_li{
-            gap: 10px;
-            &__title{
-                gap: 3px;
-                font-size: 10px;
-                &___img{
-                    width: 12px;
-                }
-            }
-            &__text{
-                width: 100px;
-                font-size: 5px;
-            }
-            &__button{
-                padding-left: 12px;
-                width: 80px;
-                height: 32px;
-                font-size: 10px;
-                &___img{
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-            &__networks{
-                width: 80px;
-            }
-        }
-       }
-       .footer-copyright{
-        padding-left: 10px;
-       }
-    }
 }
 
-/* 400px and below */
 @media (max-width: 400px) {
     .elementor-widget-wrap{
         padding: 10px 0; 
-    }
-    .header {
-        &_list {
-            display: none;
-        }
-        padding: 20px 10px 10px;
     }
     .title {
         padding-top: 20px;
@@ -1866,49 +1444,5 @@ main{
             }
         }
        
-    }
-    .footer{
-        .qodef-grid-inner{
-            padding: 10px;
-            gap: 20px;
-            &_logo{
-                width: 270px;
-            }
-            .qodef-footer-logo-text{
-                
-                width: 870px;
-                font-size: 6px;
-            }
-        }
-       .footer-about{
-        padding: 0 10px 10px;
-        &_li{
-            gap: 10px;
-            &__title{
-                gap: 3px;
-                font-size: 8px;
-                &___img{
-                    width: 10px;
-                }
-            }
-            &__text{
-                width: 80px;
-                font-size: 4px;
-            }
-            &__button{
-                padding-left: 6px;
-                width: 60px;
-                height: 32px;
-                font-size: 6px;
-                &___img{
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-            &__networks{
-                width: 60px;
-            }
-        }
-       }
     }
 }
