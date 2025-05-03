@@ -1,4 +1,6 @@
 import './menu.scss'
+import '../../styles.scss'
+import Button from '../Button/Button'
 export default function Menu() {
   return (
     <main>
@@ -16,10 +18,10 @@ export default function Menu() {
         </div>
         <div className="viewMore">
             <div className="viewMore_text">
-                <img src="./public/plus.svg" alt="" className="viewMore_anotation__plus" />
+                <img src="./public/plus.svg" alt="" className="viewMore_anotation-plus" />
                 <div className="viewMore_anotation">Be you, just stronger! Power is in you
                     <div className="viewMore_anotation__div">Unum solum justo ex ius. Pro cu probo laboramus eius insolens euripidis te eos, ut agam tota.</div>
-                    <div className="viewMore_anotation__button">View More <img src="./public/span.qodef-m-arrow.svg" alt="" className="viewMore_anotation__button___circle"/></div>
+                    <Button/>
                 </div>
             </div>
             <img src="./public/sportsmen.png" alt="" className="viewMore_img"/>
@@ -27,10 +29,10 @@ export default function Menu() {
         <div className="elementor-container">
             <img src="./public/sportsmen2.png" alt="" className="elementor-container_img"/>
             <div className="elementor-container_text">
-                <img src="./public/plus.svg" alt="" className="elementor-container__plus" />
+                <img src="./public/plus.svg" alt="" className="elementor-container-plus" />
                 <div className="elementor-container_anotation">Today is the best day to start!
                     <div className="elementor-container_anotation__div">Sed abhorreant constituam consectetuer eu. At mei clita deserunt, his movet molestie nemore.</div>
-                    <div className="elementor-container_anotation__button">View More <img src="./public/span.qodef-m-arrow.svg" alt="" className="elementor-container_anotation__button___circle"/></div>
+                    <Button/>
                 </div> 
             </div>
         </div>
@@ -54,9 +56,9 @@ export default function Menu() {
                 </div>
                 <div className="elementor-widget-wrap_text">fill the form below to start your journey</div>
                 <div className="elementor-widget-wrap_inputs">
-                    <input type="text" className="elementor-widget-wrap_inputs__input"placeholder="Name" />
-                    <input type="text" className="elementor-widget-wrap_inputs__input" placeholder="Email" />
-                    <div className="elementor-widget-wrap_inputs__button">Subscribe <img src="./public/span.qodef-m-arrow.svg" alt="" className="elementor-widget-wrap_inputs__button___circle"/></div>
+                    <input type="text" className="elementor-widget-wrap_inputs-input"placeholder="Name" />
+                    <input type="text" className="elementor-widget-wrap_inputs-input" placeholder="Email" />
+                    <Button/>
                 </div>
             
             </div>
@@ -65,18 +67,18 @@ export default function Menu() {
             <img src="./public/map.png" alt="" className="elementor-section_img"/>
             <div className="elementor-section_info">
                 <div className="elementor-section_info__title">
-                    <img src="./public/plus.svg" alt="" className="viewMore_anotation__plus" />
+                    <img src="./public/plus.svg" alt="" className="viewMore_anotation-plus" />
                     Find us near you
                 </div>
                 <div className="elementor-section_info__text">
                     Nec suas signiferumque id. An eum labore commodo principes. Usu diam noluisse cu, nam adipisci
                 </div>
-                <div className="elementor-section_info__button">View More <img src="./public/span.qodef-m-arrow.svg" alt="" className="elementor-section_info__button___circle"/></div>
+                <Button/>
             </div>
         </section>
         <div className="part-container">
             <div className="part-container_title">
-                <img src="./public/plus.svg" alt="" className="part-container_title__plus"/>
+                <img src="./public/plus.svg" alt="" className="part-container_title-plus"/>
                 be a part of our fit family
             </div>
             <div className="part-container_text">Training helps you think and feel better. join us!</div>
@@ -92,20 +94,20 @@ export default function Menu() {
                     Duo graece ponderum ne, ei mel aliquando. Pro te tamquam nonumes, nam no nemore epicurei
                 </div>
                 <ul className="qodef-m-calculator-holder-inner_inputs">
-                    <li className="qodef-m-calculator-holder-inner_inputs__input">
-                        <input type="text" placeholder="Height / cm" className="qodef-m-calculator-holder-inner_inputs__input___in1"/>
-                        <input type="text" placeholder="Weight / kg" className="qodef-m-calculator-holder-inner_inputs__input___in1"/>
+                    <li className="qodef-m-calculator-holder-inner_inputs-input">
+                        <input type="text" placeholder="Height / cm" className="qodef-m-calculator-holder-inner_inputs-input-in1"/>
+                        <input type="text" placeholder="Weight / kg" className="qodef-m-calculator-holder-inner_inputs-input-in1"/>
                     </li>
-                    <li className="qodef-m-calculator-holder-inner_inputs__input">
-                        <input type="text" placeholder="Age" className="qodef-m-calculator-holder-inner_inputs__input___in1"/>
-                        <input type="text" placeholder="Gender" className="qodef-m-calculator-holder-inner_inputs__input___in1"/>
+                    <li className="qodef-m-calculator-holder-inner_inputs-input">
+                        <input type="text" placeholder="Age" className="qodef-m-calculator-holder-inner_inputs-input-in1"/>
+                        <input type="text" placeholder="Gender" className="qodef-m-calculator-holder-inner_inputs-input-in1"/>
                     </li>
-                    <li className="qodef-m-calculator-holder-inner_inputs__input">
-                        <input type="text" placeholder="Select an activity factor:"className="qodef-m-calculator-holder-inner_inputs__input___in2"/>
+                    <li className="qodef-m-calculator-holder-inner_inputs-input">
+                        <input type="text" placeholder="Select an activity factor:"className="qodef-m-calculator-holder-inner_inputs-input-in2"/>
                     </li>
                 </ul>
                 <div className="qodef-m-calculator-holder-inner_button">
-                    calculate <img src="./public/span.qodef-m-arrow.svg" alt="" className="qodef-m-calculator-holder-inner_button__img"/>
+                    calculate <img src="./public/span.qodef-m-arrow.svg" alt="" className="qodef-m-calculator-holder-inner_button-img"/>
                 </div>
             </div>
             <div className="qodef-e-circle">

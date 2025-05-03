@@ -1,20 +1,31 @@
 import './header.scss'
+import '../../styles.scss'
 
 export default function Header() {
   return (
     <header className="header">
-        <img src="./public/header-logo-kropp.png" alt="" className="header_logo" />
-        <ul className="header_list">
-            <li className="header_list__item selected">Home</li>
-            <li className="header_list__item">Pages</li>
-            <li className="header_list__item">Portfolio</li>
-            <li className="header_list__item">blog</li>
-            <li className="header_list__item">Shop</li>
-        </ul>
-        <div className="header_buttons">
-            <button className="header_button">Book now</button>
-            <img src="./public/svg.qodef-svg--predefined-opener.svg" alt="dsds" />
-        </div>
+      <img 
+        src="./public/header-logo-kropp.png" 
+        alt="Kropp logo" 
+        className="header__logo" 
+      />
+      
+      <ul className="header__nav-list">
+        <li className="header__nav-item header__nav-item--selected">Home</li>
+        <li className="header__nav-item">Pages</li>
+        <li className="header__nav-item">Portfolio</li>
+        <li className="header__nav-item">Blog</li>
+        <li className="header__nav-item">Shop</li>
+      </ul>
+      
+      <div className="header__actions">
+        <button className="header__book-button">Book now</button>
+        <button className="header__burger-button">
+          <span className="header__burger-button-line"></span>
+          <span className="header__burger-button-line"></span>
+          <span className="header__burger-button-line"></span>
+        </button>
+      </div>
     </header>
   )
 }
