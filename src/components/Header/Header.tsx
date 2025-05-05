@@ -1,5 +1,7 @@
 import './header.scss'
 import '../../styles.scss'
+import Button from '../Button/Button'
+import { type } from '../../types'
 
 export default function Header() {
   return (
@@ -19,7 +21,7 @@ export default function Header() {
       </ul>
       
       <div className="header__actions">
-        <button className="header__book-button">Book now</button>
+        <Button variant={type.Secondary}>Book Now</Button>
         <button className="header__burger-button">
           <span className="header__burger-button-line"></span>
           <span className="header__burger-button-line"></span>

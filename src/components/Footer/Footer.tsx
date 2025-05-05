@@ -1,5 +1,7 @@
 import './footer.scss'
 import '../../styles.scss'
+import Button from '../Button/Button'
+import { type } from '../../types'
 export default function Footer() {
   return (
     <footer className="footer">
@@ -24,9 +26,7 @@ export default function Footer() {
             </li>
             <li className="footer__about-item">
                 <b className="footer__about-title">start now <img src="./public/leftArrow.svg" alt="" className='footer__title-img'/></b>
-                <div className="footer__button">
-                    Email <img src="./public/span.qodef-m-arrow.svg" alt="" className="footer__button-icon"/>
-                </div>
+                <Button variant={type.Primary}>Email</Button>
                 <img src="./public/networks.svg" alt="" className="footer__networks"/>
             </li>
         </ul>

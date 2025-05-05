@@ -1,7 +1,13 @@
+import { ButtonProps } from '../../types'
 import '../../styles.scss'
 import './Button.scss'
-export default function Button() {
+import { type } from '../../types'
+
+export default function Button({children, onClick, variant}: ButtonProps) {
+    function handleClick(e: React.MouseEvent<HTMLDivElement>){
+       if(onClick) onClick(e)
+    }
   return (
-    <div className="info_button">View More<img src="./public/span.qodef-m-arrow.svg" alt="" className="info_button-circle"/></div>
+    <div className={`${variant}__info_button`} onClick={handleClick}>{children}{variant!==type.Secondary && <img src="./public/span.qodef-m-arrow.svg" alt="" className={`${variant}__info_button-circle`}/>}</div>
   )
 }

@@ -1,7 +1,14 @@
 import './menu.scss'
 import '../../styles.scss'
 import Button from '../Button/Button'
+import { type } from '../../types'
+import { useState } from 'react'
 export default function Menu() {
+    const [counter, setCounter] = useState<number>(0)
+    function handleCounter(){
+        setCounter(prev=>prev+1)
+        console.log(counter);
+    }
   return (
     <main>
         <div className="title">
@@ -21,7 +28,7 @@ export default function Menu() {
                 <img src="./public/plus.svg" alt="" className="viewMore_anotation-plus" />
                 <div className="viewMore_anotation">Be you, just stronger! Power is in you
                     <div className="viewMore_anotation__div">Unum solum justo ex ius. Pro cu probo laboramus eius insolens euripidis te eos, ut agam tota.</div>
-                    <Button/>
+                    <Button onClick={handleCounter}variant={type.Primary}>View more</Button>
                 </div>
             </div>
             <img src="./public/sportsmen.png" alt="" className="viewMore_img"/>
@@ -32,7 +39,7 @@ export default function Menu() {
                 <img src="./public/plus.svg" alt="" className="elementor-container-plus" />
                 <div className="elementor-container_anotation">Today is the best day to start!
                     <div className="elementor-container_anotation__div">Sed abhorreant constituam consectetuer eu. At mei clita deserunt, his movet molestie nemore.</div>
-                    <Button/>
+                    <Button variant={type.Primary}>View more</Button>
                 </div> 
             </div>
         </div>
@@ -58,7 +65,7 @@ export default function Menu() {
                 <div className="elementor-widget-wrap_inputs">
                     <input type="text" className="elementor-widget-wrap_inputs-input"placeholder="Name" />
                     <input type="text" className="elementor-widget-wrap_inputs-input" placeholder="Email" />
-                    <Button/>
+                    <Button onClick={()=>console.log(2222)}variant={type.Primary}>Subscribe</Button>
                 </div>
             
             </div>
@@ -73,7 +80,7 @@ export default function Menu() {
                 <div className="elementor-section_info__text">
                     Nec suas signiferumque id. An eum labore commodo principes. Usu diam noluisse cu, nam adipisci
                 </div>
-                <Button/>
+                <Button onClick={()=>(console.log(1111))}variant={type.Primary}>View more</Button>
             </div>
         </section>
         <div className="part-container">
@@ -106,9 +113,7 @@ export default function Menu() {
                         <input type="text" placeholder="Select an activity factor:"className="qodef-m-calculator-holder-inner_inputs-input-in2"/>
                     </li>
                 </ul>
-                <div className="qodef-m-calculator-holder-inner_button">
-                    calculate <img src="./public/span.qodef-m-arrow.svg" alt="" className="qodef-m-calculator-holder-inner_button-img"/>
-                </div>
+                <Button variant={type.Primary}>Calculate</Button>
             </div>
             <div className="qodef-e-circle">
             <table className="qodef-e-circle_bmi-table">

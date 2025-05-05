@@ -1,80 +1,125 @@
-.info_button{
-    padding-left: 31px;
-    min-width: 190px;
-    height: 54px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 16px;
-    justify-content: space-between;
-    border: 1px var(--gray-color) solid;
-    border-radius: var(--border-radius);
-    &-circle{
+/*Primary type of button*/
+.primary{
+    &__info_button{
+        cursor: pointer;
+        padding-left: 31px;
+        width: 190px;
         height: 54px;
-        width: 54px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 16px;
+        justify-content: space-between;
+        border: 1px var(--gray-color) solid;
+        border-radius: var(--border-radius);
+        &-circle{
+            height: 54px;
+            width: 54px;
+        }
     }
 }
-
 
 @media (max-width: 1199.98px) {
-    .info_button{
-        min-width: 190px;
-        height: 54px;
-
-        font-size: 16px;
-        padding-left: 24px;
-        &-circle{
-            width: 54px;
+    .primary{
+        &__info_button{
+            width: 190px;
             height: 54px;
+    
+            font-size: 16px;
+            padding-left: 24px;
+            &-circle{
+                width: 54px;
+                height: 54px;
+            }
         }
     }
+    
 }
 @media (max-width: 992px){
-    .info_button{
-        max-width: 160px;
-        // min-width: 100px;
-    }
-}
-@media (max-width: 576px) {
-    .info_button{
-        padding-left: 24px;
-        display: flex;
-        gap: 8px;
-        height: 40px;
-        min-width: 130px;
-        font-size: 10px;
-        align-items: center;
-        &-circle{
-            height: 40px;
-            width: 40px;
+    .primary{
+        &__info_button{
+            width: 160px;
+            // min-width: 100px;
         }
     }
+    
 }
-@media (max-width: 400px) {
-    .info_button{
-        padding-left: 16px;
-        display: flex;
-        gap: 6px;
-        height: 32px;
-        min-width: 120px;
-        font-size: 8px;
-        align-items: center;
-        &-circle{
-            height: 32px;
-            width: 32px;
+@media (max-width: 768.1px) {
+    .primary{
+        &__info_button{
+            font-size: 12px
+        }
+    }
+    
+}
+@media (max-width: 576px) {
+    .primary{
+        &__info_button{
+            padding-left: 24px;
+            display: flex;
+            gap: 8px;
+            height: 40px;
+            width: 130px;
+            font-size: 10px;
+            align-items: center;
+            &-circle{
+                height: 40px;
+                width: 40px;
+            }
         }
     } 
 }
-// @media (max-width: 768.1){
-//     .info_button{
-//         padding-left: 20px;
-//         display: flex;
-//         gap: 5px;
-//         align-items: center;
-//         height: 32px;
-//         &-circle{
-//             height: 32px;
-//             width: 32px;
-//         }
-//     }
-// }
+@media (max-width: 400px) {
+    .primary{
+        &__info_button{
+            padding-left: 16px;
+            display: flex;
+            gap: 6px;
+            height: 24px;
+            width: 100px;
+            font-size: 8px;
+            align-items: center;
+            &-circle{
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }    
+}
+
+/*Secondary type of button*/
+.secondary{
+    &__info_button{
+        width: 124px;
+      height: 38px;
+      font-size: 16px;
+      background-color: var(--white-color);
+      color: var(--black-color);
+      border-radius: var(--border-radius);
+      font-family: var(--heebo-font);
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #e6e6e6;
+      }
+    }
+}
+
+@media (max-width: 768.1px) {
+    .secondary{
+        &__info_button {
+            width: auto;
+            padding: 0 12px;
+            font-size: 12px;
+            height: 32px;
+        }
+    } 
+}
